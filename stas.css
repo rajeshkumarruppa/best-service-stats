@@ -1,0 +1,142 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*   max-width: 100vw; */
+
+}
+
+.hotel-image-container {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/best-service-stats-sm-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 600px
+}
+
+.logo {
+    width: 80px;
+    height: 60px;
+    margin-top: 70px;
+    /* margin-left: 50px;  */
+}
+
+.hotel-heading {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 60px;
+}
+
+.description {
+    color: #ffffff;
+    font-family: "Open Sans";
+}
+
+.content-container {
+    margin-left: 40px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 50vw; */
+}
+
+.content-head {
+    font-family: "Open Sans";
+    font-size: 30px;
+    color: #12022f;
+    font-weight: 600;
+}
+
+.content-desciption {
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #594d6d;
+
+}
+
+.sub-container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.numbers-text {
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #176fff;
+    font-weight: 600;
+    margin-right: 60px
+}
+
+.about-hotel-features {
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #323f4b;
+    margin-right: 60px
+}
+
+@media (min-width:992px) {
+    .bg-container {
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .hotel-image-container {
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/best-service-stats-lg-bg-v1.png");
+        flex-shrink: 0;
+        width: 50vw;
+
+
+    }
+
+    .logo {
+        width: 140px;
+        height: 100px;
+        margin-top: 100px;
+    }
+
+    .hotel-heading {
+        font-size: 45px;
+        margin-top: 90px;
+    }
+
+    .description {
+        font-size: 25px;
+    }
+
+    .content-container {
+        justify-content: center;
+        width: 50vw;
+
+    }
+
+    .content-head {
+        font-size: 45px;
+    }
+
+    .content-desciption {
+        font-size: 30px;
+    }
+
+    .numbers-text {
+        font-size: 30px;
+    }
+
+    .about-hotel-features {
+        font-size: 30px;
+    }
+}
